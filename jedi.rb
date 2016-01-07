@@ -12,11 +12,13 @@ class Jedi
   def attack(attacked_jedi)
     @attacked_jedi = attacked_jedi
     puts "#{@name} attacked #{@attacked_jedi.name}"
+    puts "#{@attacked_jedi.name}: owwwww!"
   end
 
   def kill(attacked_jedi)
     @attacked_jedi = attacked_jedi
     puts "#{@attacked_jedi.name} is dead"
+    puts "#{@attacked_jedi.name}: rip me"
   end
 
 end
