@@ -4,20 +4,19 @@ class Tangerine
 
   def initialize
     @age = 0
+    @rotten = false
   end
 
-  def rotten
+  def increase_age
+    @age += 1
+
     if @age > 5
       @rotten = true
     else
       @rotten = false
     end
   end
-
-  def increase_age
-    @age += 1
-  end
-
+  
 end
 
 
@@ -31,5 +30,8 @@ p tangerine.increase_age
 p tangerine.increase_age
 p tangerine.increase_age
 p tangerine.increase_age
-p tangerine.rotten
+p tangerine.increase_age
+p tangerine
+
+p tangerine.rotten # should be true
 
